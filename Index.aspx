@@ -19,7 +19,7 @@
         <form id="form1" runat="server">
             <div class="login-box">
                 <div class="login-logo">
-                    <asp:HyperLink ID="HyperLink1" runat="server"><b>cientifica Admin</b>LTE</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server"><b>Admin</b>LTE</asp:HyperLink>
                 </div>
 
                 <div class="card">
