@@ -30,6 +30,13 @@ namespace WebCientifica
             command.Parameters.AddWithValue("Nombre", "Juan");
             command.Parameters.AddWithValue("Dni", "1234");
             SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(ds);
+
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                //Resultado.Text = Resultado.Text
+            }
+
         }
     }
 }

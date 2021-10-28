@@ -26,7 +26,7 @@
                     <div class="card-body login-card-body">
                          <p class="login-box-msg">Complete los siguientes datos para ingresar</p>
                          <div class="input-group mb-3">
-                             <asp:TextBox ID="TextBox1" runat="server" type="email" class="form-control" placeholder="Email"></asp:TextBox>
+                             <asp:TextBox ID="usuario" runat="server" type="text" class="form-control" placeholder="Email"></asp:TextBox>
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                      <span class="fas fa-envelope"></span>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <asp:TextBox ID="TextBox2" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
+                            <asp:TextBox ID="pass" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <asp:Panel ID="Panel1" runat="server" class="fas fa-lock"></asp:Panel>
