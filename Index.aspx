@@ -26,7 +26,7 @@
                     <div class="card-body login-card-body">
                          <p class="login-box-msg">Complete los siguientes datos para ingresar</p>
                          <div class="input-group mb-3">
-                             <asp:TextBox ID="usuario" runat="server" type="text" class="form-control" placeholder="Email"></asp:TextBox>
+                             <asp:TextBox ID="TB_usuario" runat="server" type="text" class="form-control" placeholder="Usuario"></asp:TextBox>
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                      <span class="fas fa-envelope"></span>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <asp:TextBox ID="pass" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
+                            <asp:TextBox ID="TB_pass" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <asp:Panel ID="Panel1" runat="server" class="fas fa-lock"></asp:Panel>
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                             <div class="col-4">
-                                <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                                <asp:Button ID="Button_Login" runat="server" Text="Ingresar" onclick="Button_Login_Click" class="btn btn-primary btn-block"/>
                             </div>
                         </div>
                         
@@ -62,6 +62,7 @@
                     </div>
                 </div>
             </div>
+            <asp:Label ID="LBL_Res" runat="server" Text="Label"></asp:Label>
         </form>
         <!-- jQuery -->
         <script src="js/plugins/jquery.min.js"></script>
