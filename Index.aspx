@@ -9,11 +9,11 @@
         <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
         <!-- Font Awesome -->
-        <link href="js/plugins/all.min.css" rel="stylesheet" />
+        <link href="assets/js/plugins/all.min.css" rel="stylesheet" />
         <!-- icheck bootstrap -->
-        <link href="js/plugins/icheck-bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet" />
         <!-- Theme style -->
-        <link rel="stylesheet" href="js/dist/adminlte.min.css" />
+        <link href="assets/js/dist/adminlte.min.css" rel="stylesheet" />
     </head>
     <body>
         <form id="form1" runat="server">
@@ -65,10 +65,10 @@
             <asp:Label ID="LBL_Res" runat="server" Text="Label"></asp:Label>
         </form>
         <!-- jQuery -->
-        <script src="js/plugins/jquery.min.js"></script>
+        <script src="assets/js/plugins/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
-        <script src="js/plugins/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
         <!-- AdminLTE App -->
-        <script src="js/dist/adminlte.min.js"></script>
+        <script src="assets/js/dist/adminlte.min.js"></script>
     </body>
 </html>

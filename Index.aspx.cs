@@ -25,7 +25,7 @@ namespace WebCientifica
             cadenaConn.DataSource = "DESKTOP-18QTRGI";
             cadenaConn.InitialCatalog = "CIENTIFICA";
             cadenaConn.UserID = "sa";
-            cadenaConn.Password = "1234";
+            cadenaConn.Password = "sql";
 
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = cadenaConn.ConnectionString;
@@ -36,7 +36,7 @@ namespace WebCientifica
             command.CommandType = System.Data.CommandType.StoredProcedure;
             command.CommandText = "GetUsuario";
             command.Parameters.AddWithValue("@NomUsuario", user);
-            command.Parameters.AddWithValue("@pass", pass);
+            command.Parameters.AddWithValue("@Clave", pass);
 
             DataSet infoUsuario = new DataSet();
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -45,14 +45,14 @@ namespace WebCientifica
 
             if(infoUsuario.Tables[0].Rows.Count > 0)
             {
-                if(infoUsuario.Tables[0].Rows[0]["Nombre"] == user)
+                /*if(infoUsuario.Tables[0].Rows[0]["Nombre"] == user)
                 {
                     LBL_Res.Text = "Ingresar";
                 }
                 else
                 {
                     LBL_Res.Text = "Clave incorrecta";
-                }
+                }*/
             }
             else {
                 LBL_Res.Text = "No existe";
