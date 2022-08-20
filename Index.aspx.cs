@@ -42,35 +42,12 @@ namespace WebCientifica
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = command;
             adapter.Fill(infoUsuario);
-
-            if(infoUsuario.Tables[0].Rows.Count > 0)
+            
+            if (infoUsuario.Tables[0].Rows.Count > 0)
             {
-                /*if(infoUsuario.Tables[0].Rows[0]["Nombre"] == user)
-                {
-                    LBL_Res.Text = "Ingresar";
-                }
-                else
-                {
-                    LBL_Res.Text = "Clave incorrecta";
-                }*/
-            }
-            else {
-                LBL_Res.Text = "No existe";
-            }
-            //for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                Session.Add("NomUsuario", infoUsuario);
+                Response.Redirect("Inicio.aspx");               
+            }            
         }
     }
 }
-/*CREATE PROCEDURE GetUsuario
-	-- Add the parameters for the stored procedure here
-	@NomUsuario nvarchar(50) 
-	, @Clave nvarchar(50)
-AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-
-    -- Insert statements for procedure here
-	SELECT * FROM usuario WHERE UserName=@NomUsuario and Pass=@Clave
-END*/

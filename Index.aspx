@@ -1,11 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="WebCientifica.WebForm2" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title></title>
+        <title>WebCientifica</title>
         <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
         <!-- Font Awesome -->
@@ -15,55 +16,61 @@
         <!-- Theme style -->
         <link href="assets/js/dist/adminlte.min.css" rel="stylesheet" />
     </head>
-    <body>
-        <form id="form1" runat="server">
-            <div class="login-box">
-                <div class="login-logo">
-                    <asp:HyperLink ID="HyperLink1" runat="server"><b>Admin</b>LTE</asp:HyperLink>
-                </div>
+    <body class="hold-transition login-page">
+        <div class="login-box">
+             <div class="card">                
+                  <br/>
+                    <img src="assets/img/logo_cientifica.jpg"/>
+                    <form id="form1" runat="server">
+                        <div class="login-box">
+                            <div class="login-logo">
+                                <asp:HyperLink ID="HyperLink1" runat="server"><b>WebCient&iacute;fica</b></asp:HyperLink>
+                            </div>
 
-                <div class="card">
-                    <div class="card-body login-card-body">
-                         <p class="login-box-msg">Complete los siguientes datos para ingresar</p>
-                         <div class="input-group mb-3">
-                             <asp:TextBox ID="TB_usuario" runat="server" type="text" class="form-control" placeholder="Usuario"></asp:TextBox>
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                     <span class="fas fa-envelope"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group mb-3">
-                            <asp:TextBox ID="TB_pass" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                    <asp:Panel ID="Panel1" runat="server" class="fas fa-lock"></asp:Panel>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                 <div class="icheck-primary">
-                                     <input type="checkbox" id="remember" />
-                                    <label for="remember">Remember Me</label>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <asp:Button ID="Button_Login" runat="server" Text="Ingresar" onclick="Button_Login_Click" class="btn btn-primary btn-block"/>
-                            </div>
-                        </div>
+                            <div class="card">
+                                <div class="card-body login-card-body">
+                                     <p class="login-box-msg">Complete los siguientes datos para ingresar</p>
+                                     <div class="input-group mb-3">
+                                        <asp:TextBox ID="TB_usuario" runat="server" type="text" class="form-control" placeholder="Usuario"></asp:TextBox>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                 <span class="fas fa-envelope"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <asp:TextBox ID="TB_pass" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <asp:Panel ID="Panel1" runat="server" class="fas fa-lock"></asp:Panel>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                             <!--<div class="icheck-primary">
+                                                 <input type="checkbox" id="remember" />
+                                                <label for="remember">Remember Me</label>
+                                            </div>-->
+                                        </div>
+                                        <div class="col-4">
+                                            <asp:Button ID="Button_Login" runat="server" Text="Ingresar" onclick="Button_Login_Click" class="btn btn-primary btn-block"/>
+                                        </div>
+                                    </div><br/>
                         
-                        <p class="mb-1">
-                            <a href="forgot-password.html">I forgot my password</a>
-                        </p>
-                        <p class="mb-0">
-                            <a href="register.html" class="text-center">Register a new membership</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <asp:Label ID="LBL_Res" runat="server" Text="Label"></asp:Label>
-        </form>
+                                    <p class="mb-1">
+                                        <a href="forgot-password.html">Olvid&eacute; mi contrase&ntilde;a</a>
+                                    </p>
+                                    <p class="mb-0">
+                                        <a href="register.html" class="text-center">Registrarme</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<asp:Label ID="LBL_Res" runat="server" Text="Label"></asp:Label>-->
+                    </form>
+             </div>
+        </div>
         <!-- jQuery -->
         <script src="assets/js/plugins/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
