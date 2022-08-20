@@ -11,17 +11,8 @@ namespace WebCientifica
 {
 
 
-    public partial class WebForm2
+    public partial class Registro
     {
-
-        /// <summary>
-        /// Control form1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// Control HyperLink1.
@@ -42,6 +33,33 @@ namespace WebCientifica
         protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
 
         /// <summary>
+        /// Control TB_nombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_nombre;
+
+        /// <summary>
+        /// Control TB_apellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_apellido;
+
+        /// <summary>
+        /// Control TB_doc.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_doc;
+
+        /// <summary>
         /// Control TB_usuario.
         /// </summary>
         /// <remarks>
@@ -60,30 +78,30 @@ namespace WebCientifica
         protected global::System.Web.UI.WebControls.TextBox TB_pass;
 
         /// <summary>
-        /// Control Panel1.
+        /// Control TB_pass2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.TextBox TB_pass2;
 
         /// <summary>
-        /// Control Button_Login.
+        /// Control btn_enviar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Login;
+        protected global::System.Web.UI.WebControls.Button btn_enviar;
 
         /// <summary>
-        /// Control LBL_Res.
+        /// Control LBL_Error.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Res;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LBL_Error;
     }
 }

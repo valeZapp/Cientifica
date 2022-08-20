@@ -24,12 +24,13 @@
                     <form id="form1" runat="server">
                         <div class="login-box">
                             <div class="login-logo">
-                                <asp:HyperLink ID="HyperLink1" runat="server"><b>WebCient&iacute;fica</b></asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink1" runat="server"><b>WebCient&iacute;fica</b></asp:HyperLink><br/>
+                                <asp:HyperLink ID="HyperLink2" runat="server"><b>Partes Urgentes</b></asp:HyperLink>
                             </div>
 
                             <div class="card">
                                 <div class="card-body login-card-body">
-                                     <p class="login-box-msg">Complete los siguientes datos para ingresar</p>
+                                     <p class="login-box-msg">Complete los siguientes datos para ingresar al sistema</p>
                                      <div class="input-group mb-3">
                                         <asp:TextBox ID="TB_usuario" runat="server" type="text" class="form-control" placeholder="Usuario"></asp:TextBox>
                                         <div class="input-group-append">
@@ -39,7 +40,7 @@
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
-                                        <asp:TextBox ID="TB_pass" runat="server" type="password" class="form-control" placeholder="Password"></asp:TextBox>
+                                        <asp:TextBox ID="TB_pass" runat="server" type="password" class="form-control" placeholder="Contrase&ntilde;a"></asp:TextBox>
                                         <div class="input-group-append">
                                             <div class="input-group-text">
                                                 <asp:Panel ID="Panel1" runat="server" class="fas fa-lock"></asp:Panel>
@@ -62,7 +63,7 @@
                                         <a href="forgot-password.html">Olvid&eacute; mi contrase&ntilde;a</a>
                                     </p>
                                     <p class="mb-0">
-                                        <a href="register.html" class="text-center">Registrarme</a>
+                                        <a href="Registro.aspx" class="text-center">Registrarme</a>
                                     </p>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebCientifica.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="WebCientifica.Usuarios1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -7,7 +8,6 @@
             <p style="color:#0094ff; font-size: 24px; font-family: Verdana;">Bienvenidos al sitio de</p>
             <p style="color:#0094ff; font-size: 24px; font-family: Verdana;">Registro de Partes Urgentes</p>
             <img src="assets/img/logo_cientifica.jpg"/>
-            <a href="Usuarios.aspx" class="nav-link">Usuarios</a>
         </div>
     </div>
 </asp:Content>
