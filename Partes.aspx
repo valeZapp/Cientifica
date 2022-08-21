@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="col-md-12">
         <div class="col-md-3">
-            <asp:Button ID="Button_NewUsu" runat="server" Text="Nuevo Usuario" onclick="Button_NewUsu_Click" class="btn btn-success btn-block"/>
+            <asp:Button ID="Button_NewParte" runat="server" Text="Cargar Nuevo Parte" onclick="Button_NewParte_Click" class="btn btn-success btn-block"/>
         </div>
     </div>
     <br/>
@@ -33,11 +33,11 @@
                     </HeaderTemplate>
                     <ItemTemplate>
                         <tr>
-                            <td><%#Eval("Apellido") %></td>
-                            <td><%#Eval("Nombre") %></td>
-                            <td><%#Eval("UserName") %></td>
-                            <td><%#Eval("Doc") %></td>
-                            <td><%#Eval("Descripcion") %></td>
+                            <td><%#Eval("DCO") %></td>
+                            <td><%#Eval("Anio") %></td>
+                            <td><%#Eval("JefeTurno") %></td>
+                            <td><%#Eval("Fecha") %></td>
+                            <td><%#Eval("Comunicador") %></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>

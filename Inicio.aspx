@@ -6,7 +6,10 @@
             <p style="color:#0094ff; font-size: 24px; font-family: Verdana;">Bienvenidos al sitio de</p>
             <p style="color:#0094ff; font-size: 24px; font-family: Verdana;">Registro de Partes Urgentes</p>
             <img src="assets/img/logo_cientifica.jpg"/>
+            <br/>
             <a href="Usuarios.aspx" class="nav-link">Usuarios</a>
+            <br/>
+            <a href="Partes.aspx" class="nav-link">Partes</a>
         </div>
     </div>
 </asp:Content>
