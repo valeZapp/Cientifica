@@ -11,26 +11,8 @@ namespace WebCientifica
 {
 
 
-    public partial class Registro
+    public partial class UsuarioNuevo
     {
-
-        /// <summary>
-        /// Control HyperLink1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-
-        /// <summary>
-        /// Control HyperLink2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
 
         /// <summary>
         /// Control TB_nombre.
@@ -87,13 +69,13 @@ namespace WebCientifica
         protected global::System.Web.UI.WebControls.TextBox TB_pass2;
 
         /// <summary>
-        /// Control btn_enviar.
+        /// Control Btn_newUsu.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_enviar;
+        protected global::System.Web.UI.WebControls.Button Btn_newUsu;
 
         /// <summary>
         /// Control LBL_Res.

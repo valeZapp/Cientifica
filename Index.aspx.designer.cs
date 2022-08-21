@@ -69,15 +69,6 @@ namespace WebCientifica
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// Control Button_Login.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Login;
-
-        /// <summary>
         /// Control LBL_Res.
         /// </summary>
         /// <remarks>
@@ -85,5 +76,14 @@ namespace WebCientifica
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LBL_Res;
+
+        /// <summary>
+        /// Control Button_Login.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Login;
     }
 }

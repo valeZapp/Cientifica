@@ -7,13 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>WebCientifica</title>
-        <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
-        <!-- Font Awesome -->
         <link href="assets/js/plugins/all.min.css" rel="stylesheet" />
-        <!-- icheck bootstrap -->
         <link href="assets/css/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet" />
-        <!-- Theme style -->
         <link href="assets/js/dist/adminlte.min.css" rel="stylesheet" />
     </head>
     <body class="hold-transition login-page">
@@ -32,7 +28,7 @@
                                 <div class="card-body login-card-body">
                                      <p class="login-box-msg">Complete los siguientes datos para ingresar al sistema</p>
                                      <div class="input-group mb-3">
-                                        <asp:TextBox ID="TB_usuario" runat="server" type="text" class="form-control" placeholder="Usuario"></asp:TextBox>
+                                        <asp:TextBox ID="TB_usuario" runat="server" Text="" type="text" class="form-control" placeholder="Usuario"></asp:TextBox>
                                         <div class="input-group-append">
                                             <div class="input-group-text">
                                                  <span class="fas fa-envelope"></span>
@@ -46,13 +42,13 @@
                                                 <asp:Panel ID="Panel1" runat="server" class="fas fa-lock"></asp:Panel>
                                             </div>
                                         </div>
+                                        
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <asp:Label ID="LBL_Res" runat="server" Text=" " style="color: red;"></asp:Label>
                                     </div>
                                     <div class="row">
                                         <div class="col-4">
-                                             <!--<div class="icheck-primary">
-                                                 <input type="checkbox" id="remember" />
-                                                <label for="remember">Remember Me</label>
-                                            </div>-->
                                         </div>
                                         <div class="col-4">
                                             <asp:Button ID="Button_Login" runat="server" Text="Ingresar" onclick="Button_Login_Click" class="btn btn-primary btn-block"/>
@@ -68,15 +64,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<asp:Label ID="LBL_Res" runat="server" Text="Label"></asp:Label>-->
                     </form>
              </div>
         </div>
-        <!-- jQuery -->
+
         <script src="assets/js/plugins/jquery.min.js"></script>
-        <!-- Bootstrap 4 -->
         <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
-        <!-- AdminLTE App -->
         <script src="assets/js/dist/adminlte.min.js"></script>
     </body>
 </html>

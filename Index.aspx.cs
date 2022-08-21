@@ -13,41 +13,55 @@ namespace WebCientifica
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LBL_Res.Text = "";
         }
+        private DataSet Conectar(SqlCommand comando)
+        {
+            SqlConnectionStringBuilder cadenaConexion = new SqlConnectionStringBuilder();
+            cadenaConexion.DataSource = "DESKTOP-18QTRGI";
+            cadenaConexion.InitialCatalog = "CIENTIFICA";
+            cadenaConexion.UserID = "sa";
+            cadenaConexion.Password = "sql";
 
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = cadenaConexion.ConnectionString;
+            conn.Open();
+
+            comando.Connection = conn;
+
+            DataSet ds = new DataSet();
+            SqlDataAdapter cargador = new SqlDataAdapter();
+            cargador.SelectCommand = comando;
+            cargador.Fill(ds);
+            return ds;
+        }
         protected void Button_Login_Click(object sender, EventArgs e)
         {
             string user = TB_usuario.Text;
             string pass = TB_pass.Text;
 
-            SqlConnectionStringBuilder cadenaConn = new SqlConnectionStringBuilder();
-            cadenaConn.DataSource = "DESKTOP-18QTRGI";
-            cadenaConn.InitialCatalog = "CIENTIFICA";
-            cadenaConn.UserID = "sa";
-            cadenaConn.Password = "sql";
-
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = cadenaConn.ConnectionString;
-            conn.Open();
-
             SqlCommand command = new SqlCommand();
-            command.Connection = conn;
             command.CommandType = System.Data.CommandType.StoredProcedure;
             command.CommandText = "GetUsuario";
             command.Parameters.AddWithValue("@NomUsuario", user);
             command.Parameters.AddWithValue("@Clave", pass);
+            DataSet ds = Conectar(command);
 
             DataSet infoUsuario = new DataSet();
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = command;
             adapter.Fill(infoUsuario);
-            
+
             if (infoUsuario.Tables[0].Rows.Count > 0)
             {
+
                 Session.Add("NomUsuario", infoUsuario);
-                Response.Redirect("Inicio.aspx");               
-            }            
+                Response.Redirect("Inicio.aspx");
+            }
+            else 
+            {
+                LBL_Res.Text = "Usuario o contraseña incorrectos";
+            }
         }
     }
 }

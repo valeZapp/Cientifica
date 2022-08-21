@@ -34,7 +34,7 @@
                             <asp:TextBox ID="TB_nombre" runat="server" class="form-control" placeholder="Nombre"></asp:TextBox>
                             <div class="input-group-append">
                                 <div class="input-group-text">
-                                    <span class="fas fa-user"></span>
+                                    <span class="fa fa-user"></span>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <asp:TextBox ID="TB_doc" runat="server" class="form-control" placeholder="DNI"></asp:TextBox>
+                            <asp:TextBox ID="TB_doc" runat="server" type="number" class="form-control" placeholder="DNI"></asp:TextBox>
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-user"></span>
@@ -80,25 +80,20 @@
                         </div>
                         <div class="row">
                             <div class="col-6"></div>
-                            <!-- /.col -->
                             <div class="col-6">
                                 <asp:Button ID="btn_enviar" OnClick="Btn_enviar_click" runat="server" Text="Enviar" class="btn btn-primary btn-block" />
                             </div>
-                            <!-- /.col -->
                         </div>         
                     </form>
-                    <p class="mb-0">
-                       <label id="LBL_Error" runat="server"></label>
-                    </p>
+                    <div class="input-group mb-3">
+                        <asp:Label ID="LBL_Res" runat="server" Text=" " style="color: red;"></asp:Label>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- jQuery -->
         <script src="assets/js/plugins/jquery.min.js"></script>
-        <!-- Bootstrap 4 -->
         <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
-        <!-- AdminLTE App -->
         <script src="assets/js/dist/adminlte.min.js"></script>
     </body>
 </html>

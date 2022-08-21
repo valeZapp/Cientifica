@@ -11,25 +11,16 @@ namespace WebCientifica
 {
 
 
-    public partial class Usuarios
+    public partial class NuevoParte
     {
 
         /// <summary>
-        /// Control Button_NewUsu.
+        /// Control TableListView.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_NewUsu;
-
-        /// <summary>
-        /// Control rptResult.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptResult;
+        protected global::System.Web.UI.WebControls.ListView TableListView;
     }
 }

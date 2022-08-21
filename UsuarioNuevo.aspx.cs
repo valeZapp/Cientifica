@@ -9,13 +9,12 @@ using System.Data.SqlClient;
 
 namespace WebCientifica
 {
-    public partial class Registro : System.Web.UI.Page
+    public partial class UsuarioNuevo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-        }
 
+        }
         private DataSet Conectar(SqlCommand comando)
         {
             SqlConnectionStringBuilder cadenaConexion = new SqlConnectionStringBuilder();
@@ -36,14 +35,15 @@ namespace WebCientifica
             cargador.Fill(ds);
             return ds;
         }
-        protected void Btn_enviar_click(object sender, EventArgs e)
+
+        protected void Btn_newUsu_Click(object sender, EventArgs e)
         {
             string user = TB_usuario.Text;
             string pass = TB_pass.Text;
             string nombre = TB_nombre.Text;
             string apellido = TB_apellido.Text;
             string dni = TB_doc.Text;
-            
+
             SqlCommand command = new SqlCommand();
             command.CommandType = System.Data.CommandType.StoredProcedure;
             command.CommandText = "InsertUsuario";
@@ -58,9 +58,8 @@ namespace WebCientifica
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = command;
             adapter.Fill(infoUsuario);
-            
-            Response.Redirect("Index.aspx");
+
+            Response.Redirect("Usuarios.aspx");
         }
     }
-
 }
