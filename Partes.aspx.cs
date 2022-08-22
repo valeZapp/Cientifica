@@ -46,9 +46,5 @@ namespace WebCientifica
             cargador.Fill(ds);
             return ds;
         }
-        protected void Button_NewParte_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ParteNuevo.aspx");
-        }
     }
 }

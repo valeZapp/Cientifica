@@ -2,13 +2,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="col-md-12">
-        <div class="col-md-3">
-            <asp:Button ID="Button_NewParte" runat="server" Text="Cargar Nuevo Parte" onclick="Button_NewParte_Click" class="btn btn-success btn-block"/>
-        </div>
-    </div>
-    <br/>
-
-    <div class="col-md-12">
         <div class="card card-secondary">
             <div class="card-header">
                 <h3 class="card-title">Partes Urgentes cargados en el sistema</h3>
@@ -24,20 +17,32 @@
                     <HeaderTemplate>
                         <table class="table">
                             <tr>
-                                <th scope="col">Apellido</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Usuario</th>
-                                <th scope="col">DNI</th>
-                                <th scope="col">Nivel</th>
+                                <th scope="col">DCO</th>
+                                <th scope="col">Jefe de Turno</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Comunico</th>
+                                <th scope="col">Departamental</th>
+                                <th scope="col">Comisar&iacute;a</th>
+                                <th scope="col">Domicilio</th>
+                                <th scope="col">Car&aacute;tula</th>
+                                <th scope="col">V&iacute;ctima</th>
+                                <th scope="col">Imputado</th>
                             </tr>
                     </HeaderTemplate>
                     <ItemTemplate>
                         <tr>
                             <td><%#Eval("DCO") %></td>
-                            <td><%#Eval("Anio") %></td>
                             <td><%#Eval("JefeTurno") %></td>
                             <td><%#Eval("Fecha") %></td>
+                            <td><%#Eval("Hora") %></td>
                             <td><%#Eval("Comunicador") %></td>
+                            <td><%#Eval("Dep") %></td>
+                            <td><%#Eval("Cria") %></td>
+                            <td><%#Eval("Fecha") %></td>
+                            <td><%#Eval("Fecha") %></td>
+                            <td><%#Eval("Fecha") %></td>
+                            <td><%#Eval("Fecha") %></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>
