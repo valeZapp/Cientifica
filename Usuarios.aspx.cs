@@ -37,7 +37,7 @@ namespace WebCientifica
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = cadenaConexion.ConnectionString;
             conn.Open();
-
+            
             comando.Connection = conn;
 
             DataSet ds = new DataSet();

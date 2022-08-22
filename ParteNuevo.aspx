@@ -13,97 +13,97 @@
             </div>
                 
             <div class="card-body">
-                    <h4>COMUNICACION DEL HECHO</h4><br/>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">JEFE DE TURNO</label>
-                        <asp:TextBox ID="TB_jefe" runat="server" class="form-control" placeholder="Jefe de Turno"></asp:TextBox>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fa fa-user"></span>
-                            </div>
+                <h4>COMUNICACION DEL HECHO</h4><br/>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">JEFE DE TURNO</label>
+                    <asp:TextBox ID="TB_jefe" runat="server" class="form-control" placeholder="Jefe de Turno"></asp:TextBox>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fa fa-user"></span>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">FECHA</label>
-                        <asp:TextBox ID="TB_fecha" runat="server" class="form-control" placeholder="Fecha"></asp:TextBox>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-calendar"></span>
-                            </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">FECHA</label>
+                    <asp:TextBox ID="TB_fecha" runat="server" class="form-control" placeholder="Fecha"></asp:TextBox>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-calendar"></span>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">HORA</label>
-                        <asp:TextBox ID="TB_hora" runat="server" class="form-control" placeholder="Hora"></asp:TextBox>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="far fa-calendar"></span>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">COMUNICO</label>
-                        <asp:TextBox ID="TB_comunico" runat="server" class="form-control" placeholder="Comunico"></asp:TextBox>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-user"></span>
-                            </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">HORA</label>
+                    <asp:TextBox ID="TB_hora" runat="server" class="form-control" placeholder="Hora"></asp:TextBox>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="far fa-calendar"></span>
                         </div>
                     </div>
+                </div> 
+                <div class="input-group mb-3">
+                    <label style="width:200px;">COMUNICO</label>
+                    <asp:TextBox ID="TB_comunico" runat="server" class="form-control" placeholder="Comunico"></asp:TextBox>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">DEPARTAMENTAL</label>
-                        <asp:DropDownList ID="ddl_departamental" class="form-control" runat="server"></asp:DropDownList>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-warehouse"></span>
-                            </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">DEPARTAMENTAL</label>
+                    <asp:DropDownList ID="ddl_departamental" class="form-control" runat="server"></asp:DropDownList>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-warehouse"></span>
                         </div>
+                    </div>
                         
-                    </div>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">COMISARIA</label>
-                        <asp:DropDownList ID="ddl_comisaria" class="form-control" runat="server"></asp:DropDownList>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-warehouse"></span>
-                            </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">COMISARIA</label>
+                    <asp:DropDownList ID="ddl_comisaria" class="form-control" runat="server"></asp:DropDownList>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-warehouse"></span>
                         </div>
                     </div>
+                </div>
 
-                    <h4>DATOS DEL HECHO</h4><br/>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">CARATULA</label>
-                        <asp:DropDownList ID="ddl_caratula" class="form-control" runat="server"></asp:DropDownList>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-warehouse"></span>
-                            </div>
+                <h4>DATOS DEL HECHO</h4><br/>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">CARATULA</label>
+                    <asp:DropDownList ID="ddl_caratula" class="form-control" runat="server"></asp:DropDownList>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-warehouse"></span>
                         </div>
+                    </div>
                         
-                    </div>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">VICTIMA</label>
-                        <asp:TextBox ID="TB_victima" runat="server" class="form-control" placeholder="Victima"></asp:TextBox>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-user"></span>
-                            </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">VICTIMA</label>
+                    <asp:TextBox ID="TB_victima" runat="server" class="form-control" placeholder="Victima"></asp:TextBox>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">IMPUTADO</label>
-                        <asp:TextBox ID="TB_imputado" runat="server" class="form-control" placeholder="Imputado"></asp:TextBox>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-user"></span>
-                            </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">IMPUTADO</label>
+                    <asp:TextBox ID="TB_imputado" runat="server" class="form-control" placeholder="Imputado"></asp:TextBox>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <label style="width:200px;">SINTESIS</label>
-                        <asp:TextBox id="TA_sintesis" TextMode="multiline" class="form-control" Columns="100" Rows="5" runat="server" />                        
-                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label style="width:200px;">SINTESIS</label>
+                    <asp:TextBox id="TA_sintesis" TextMode="multiline" class="form-control" Columns="100" Rows="5" runat="server" />                        
+                </div>
   
                 <div class="input-group mb-3">
                     <asp:Label ID="LBL_Res" runat="server" Text=" " style="color: red;"></asp:Label>
