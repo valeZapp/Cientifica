@@ -98,6 +98,10 @@
     <Content Include="assets\css\fontawesome-free\webfonts\fa-solid-900.svg" />
     <Content Include="assets\css\icheck-bootstrap\icheck-bootstrap.css" />
     <Content Include="assets\css\icheck-bootstrap\icheck-bootstrap.min.css" />
+    <Content Include="assets\img\agregar.jpg" />
+    <Content Include="assets\img\buscar.jpg" />
+    <Content Include="assets\img\editar.jpg" />
+    <Content Include="assets\img\eliminar.jpg" />
     <Content Include="assets\img\logo_cientifica.jpg" />
     <Content Include="assets\js\dist\adminlte.min.css" />
     <Content Include="assets\js\dist\adminlte.min.js" />
