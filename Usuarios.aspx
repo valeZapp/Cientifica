@@ -29,6 +29,7 @@
                                 <th scope="col">Usuario</th>
                                 <th scope="col">DNI</th>
                                 <th scope="col">Nivel</th>
+                                <th scope="col">Acciones</th>
                             </tr>
                     </HeaderTemplate>
                     <ItemTemplate>
@@ -38,6 +39,8 @@
                             <td><%#Eval("UserName") %></td>
                             <td><%#Eval("Doc") %></td>
                             <td><%#Eval("Descripcion") %></td>
+                            <td><asp:ImageButton Id="img_editar" runat="server" ImageUrl="assets/img/editar.jpg" width="20" height="20" title="Editar Perito"/>&nbsp;&nbsp;
+                                <asp:ImageButton Id="img_eliminar" runat="server" ImageUrl="assets/img/eliminar.jpg" width="20" height="20" title="Eliminar Perito"/></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>

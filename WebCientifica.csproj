@@ -127,8 +127,11 @@
     <Content Include="assets\js\plugins\bootstrap.bundle.min.js" />
     <Content Include="assets\js\plugins\icheck-bootstrap.min.css" />
     <Content Include="assets\js\plugins\jquery.min.js" />
+    <Content Include="Caratulas.aspx" />
+    <Content Include="Dependencias_policiales.aspx" />
     <Content Include="ParteNuevo.aspx" />
     <Content Include="Partes.aspx" />
+    <Content Include="Peritos.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="UsuarioNuevo.aspx" />
     <Content Include="Usuarios.aspx" />
@@ -137,6 +140,20 @@
     <Content Include="Index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caratulas.aspx.cs">
+      <DependentUpon>Caratulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caratulas.aspx.designer.cs">
+      <DependentUpon>Caratulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dependencias_policiales.aspx.cs">
+      <DependentUpon>Dependencias_policiales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dependencias_policiales.aspx.designer.cs">
+      <DependentUpon>Dependencias_policiales.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ParteNuevo.aspx.cs">
       <DependentUpon>ParteNuevo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,6 +167,13 @@
     </Compile>
     <Compile Include="Partes.aspx.designer.cs">
       <DependentUpon>Partes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peritos.aspx.cs">
+      <DependentUpon>Peritos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peritos.aspx.designer.cs">
+      <DependentUpon>Peritos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.aspx.cs">

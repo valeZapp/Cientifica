@@ -10,7 +10,6 @@
 namespace WebCientifica
 {
 
-
     public partial class Site1
     {
 

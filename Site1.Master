@@ -100,25 +100,28 @@
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                                        <i class="nav-icon fas fa-file-powerpoint"></i>
                                         <p>Parte Urgente <i class="right fas fa-angle-left"></i></p>
                                     </a>
 
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
                                             <a href="ParteNuevo.aspx" class="nav-link">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Ingresar Nuevo</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="Partes.aspx" class="nav-link">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Buscar</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="modificarPU.aspx" class="nav-link">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Modificar</p>
                                             </a>
@@ -133,25 +136,25 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="peritos.aspx" class="nav-link">
-                                        <i class="nav-icon fas fa-user-alt"></i>
+                                    <a href="Peritos.aspx" class="nav-link">
+                                        <i class="nav-icon far fa-id-card"></i>
                                         <p>Peritos</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="caratulas.aspx" class="nav-link">
+                                    <a href="Caratulas.aspx" class="nav-link">
                                         <i class="nav-icon fas fa-list-alt"></i>
                                         <p>Car&aacute;tulas</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="dependencias_policiales.aspx" class="nav-link">
-                                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <a href="Dependencias_policiales.aspx" class="nav-link">
+                                        <i class="nav-icon fas fa-warehouse"></i>
                                         <p>Dependencias policiales</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="estadisticas.aspx" class="nav-link">
+                                    <a href="Estadisticas.aspx" class="nav-link">
                                         <i class="nav-icon fas fa-tachometer-alt"></i>
                                         <p>Estad&iacute;sticas</p>
                                     </a>
@@ -171,8 +174,8 @@
 
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-right">
-                                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                                        <li class="breadcrumb-item active"><a href="#">Cerrar sesi&oacuten</a></li>
+                                        <li class="breadcrumb-item"><a href="Inicio.aspx">Inicio</a></li>
+                                        <li class="breadcrumb-item active"><a href="#">Cerrar sesi&oacute;n</a></li>
                                         </ol>  
                                 </div>
                             </div>
@@ -193,7 +196,7 @@
                     <div class="float-right d-none d-sm-block">
                         <b>Version</b> 3.1.0
                     </div>
-                    <strong>Copyright &copy; 2022 <a href="https://adminlte.io">Proyecto Final</a>.</strong> 
+                   Copyright &copy; 2022 Proyecto Final | <strong>Armoa - Zappitelli</strong> 
                 </footer>
 
                 <aside class="control-sidebar control-sidebar-dark">
