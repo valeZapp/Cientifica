@@ -55,9 +55,9 @@
                                         </div>
                                     </div><br/>
                         
-                                    <p class="mb-1">
+                                    <!--<p class="mb-1">
                                         <a href="forgot-password.html">Olvid&eacute; mi contrase&ntilde;a</a>
-                                    </p>
+                                    </p>-->
                                     <p class="mb-0">
                                         <a href="Registro.aspx" class="text-center">Registrarme</a>
                                     </p>

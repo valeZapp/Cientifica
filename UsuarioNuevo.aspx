@@ -34,7 +34,7 @@
                         <asp:TextBox ID="TB_doc" runat="server" type="number" class="form-control" placeholder="DNI"></asp:TextBox>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-user"></span>
+                                <span class="far fa-address-card"></span>
                             </div>
                         </div>
                     </div> 
