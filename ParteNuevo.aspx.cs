@@ -18,14 +18,14 @@ namespace WebCientifica
             comando.CommandText = "GetDepartamentales";
             DataSet ds = Conectar(comando);
 
-            Fill(ddl_departamental, ds, "DependenciaId", "Nombre", 0, true);
+            Fill(ddl_departamental, ds, "DependenciaID", "Nombre", 0, true);
 
             SqlCommand comando2 = new SqlCommand();
             comando2.CommandType = System.Data.CommandType.StoredProcedure;
             comando2.CommandText = "GetComisarias";
             DataSet ds2 = Conectar(comando2);
 
-            Fill(ddl_comisaria, ds2, "DependenciaId", "Nombre", 0, true);
+            Fill(ddl_comisaria, ds2, "DependenciaID", "Nombre", 0, true);
 
             SqlCommand comando3 = new SqlCommand();
             comando3.CommandType = System.Data.CommandType.StoredProcedure;
@@ -73,9 +73,9 @@ namespace WebCientifica
             DateTime fecha = DateTime.Parse(TB_fecha.Text);
             string hora = TB_hora.Text;
             string comunico = TB_comunico.Text;
-            string dep = ddl_departamental.SelectedValue;
-            string cria = ddl_comisaria.SelectedValue;
-            string caratula = ddl_caratula.SelectedValue;
+            int dep = int.Parse(ddl_departamental.SelectedItem.Value.ToString());
+            int cria = int.Parse(ddl_comisaria.SelectedItem.Value.ToString());
+            int caratula = int.Parse(ddl_caratula.SelectedItem.Value.ToString());
             string victima = TB_victima.Text;
             string imputado = TB_imputado.Text;
             string sintesis = TA_sintesis.Text;
@@ -87,15 +87,15 @@ namespace WebCientifica
             command.Parameters.AddWithValue("@Fecha", fecha);
             command.Parameters.AddWithValue("@Hora", hora);
             command.Parameters.AddWithValue("@Comunicador", comunico);
-            command.Parameters.AddWithValue("@Departamental", dep);
-            command.Parameters.AddWithValue("@Comisaria", cria);
+            command.Parameters.AddWithValue("@Departamental", 12);
+            command.Parameters.AddWithValue("@Comisaria", 1);
             command.Parameters.AddWithValue("@UsuarioID", 8);
             DataSet ds = Conectar(command);
 
             SqlCommand command2 = new SqlCommand();
             command2.CommandType = System.Data.CommandType.StoredProcedure;
             command2.CommandText = "InsertHecho";
-            command2.Parameters.AddWithValue("@CaratulaID", caratula);
+            command2.Parameters.AddWithValue("@CaratulaID", 5);
             command2.Parameters.AddWithValue("@Victima", victima);
             command2.Parameters.AddWithValue("@Imputado", imputado);
             command2.Parameters.AddWithValue("@Sintesis", sintesis);
