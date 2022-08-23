@@ -11,7 +11,6 @@ namespace WebCientifica
 {
     public partial class Site1
     {
-
         /// <summary>
         /// Control head.
         /// </summary>

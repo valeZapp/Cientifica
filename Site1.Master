@@ -109,23 +109,23 @@
                                             <a href="ParteNuevo.aspx" class="nav-link">
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <i class="far fa-circle nav-icon"></i>
-                                                <p>Ingresar Nuevo</p>
+                                                <p>Ingresar Nuevo Parte</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="Partes.aspx" class="nav-link">
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <i class="far fa-circle nav-icon"></i>
-                                                <p>Buscar</p>
+                                                <p>Ver Partes</p>
                                             </a>
                                         </li>
-                                        <li class="nav-item">
+                                        <!--<li class="nav-item">
                                             <a href="modificarPU.aspx" class="nav-link">
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Modificar</p>
                                             </a>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </li>
        
