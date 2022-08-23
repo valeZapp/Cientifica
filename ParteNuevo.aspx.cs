@@ -66,8 +66,11 @@ namespace WebCientifica
         }
         protected void Button_NewParte_Click(object sender, EventArgs e)
         {
+            /*DataSet dsUsuario = (DataSet)Session["usuario"];
+            int idDep = int.Parse(dsUsuario.Tables[0].Rows[0]["IdDependencia"].ToString());*/
+
             string jefe = TB_jefe.Text;
-            string fecha = TB_fecha.Text;
+            DateTime fecha = DateTime.Parse(TB_fecha.Text);
             string hora = TB_hora.Text;
             string comunico = TB_comunico.Text;
             string dep = ddl_departamental.SelectedValue;
@@ -89,21 +92,6 @@ namespace WebCientifica
             command.Parameters.AddWithValue("@UsuarioID", 8);
             DataSet ds = Conectar(command);
 
-            DataSet infoUsuario = new DataSet();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
-            adapter.Fill(infoUsuario);
-
-            /*SqlCommand commandID = new SqlCommand();
-            commandID.CommandType = System.Data.CommandType.StoredProcedure;
-            commandID.CommandText = "GetParteID";
-            DataSet dsID = Conectar(commandID);
-
-            DataSet infoID = new DataSet();
-            SqlDataAdapter adapterID = new SqlDataAdapter();
-            adapterID.SelectCommand = commandID;
-            adapterID.Fill(infoID);*/
-
             SqlCommand command2 = new SqlCommand();
             command2.CommandType = System.Data.CommandType.StoredProcedure;
             command2.CommandText = "InsertHecho";
@@ -111,15 +99,9 @@ namespace WebCientifica
             command2.Parameters.AddWithValue("@Victima", victima);
             command2.Parameters.AddWithValue("@Imputado", imputado);
             command2.Parameters.AddWithValue("@Sintesis", sintesis);
-            command2.Parameters.AddWithValue("@ComunicacionID", 6);
             command2.Parameters.AddWithValue("@LocalidadID", 63);
             command2.Parameters.AddWithValue("@PartidoID", 63);
             DataSet ds2 = Conectar(command2);
-
-            DataSet infoUsuario2 = new DataSet();
-            SqlDataAdapter adapter2 = new SqlDataAdapter();
-            adapter2.SelectCommand = command2;
-            adapter2.Fill(infoUsuario2);
 
             Response.Redirect("Partes.aspx");
         }

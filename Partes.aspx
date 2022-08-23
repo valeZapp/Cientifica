@@ -24,7 +24,6 @@
                                 <th scope="col">Comunico</th>
                                 <th scope="col">Departamental</th>
                                 <th scope="col">Comisar&iacute;a</th>
-                                <th scope="col">Domicilio</th>
                                 <th scope="col">Car&aacute;tula</th>
                                 <th scope="col">V&iacute;ctima</th>
                                 <th scope="col">Imputado</th>
@@ -39,10 +38,9 @@
                             <td><%#Eval("Comunicador") %></td>
                             <td><%#Eval("Dep") %></td>
                             <td><%#Eval("Cria") %></td>
-                            <td><%#Eval("Fecha") %></td>
-                            <td><%#Eval("Fecha") %></td>
-                            <td><%#Eval("Fecha") %></td>
-                            <td><%#Eval("Fecha") %></td>
+                            <td><%#Eval("Nombre") %></td>
+                            <td><%#Eval("Victima") %></td>
+                            <td><%#Eval("Imputado") %></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>
