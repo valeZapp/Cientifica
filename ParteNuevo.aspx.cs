@@ -79,6 +79,10 @@ namespace WebCientifica
             string victima = TB_victima.Text;
             string imputado = TB_imputado.Text;
             string sintesis = TA_sintesis.Text;
+            string acargo = TB_acargo.Text;
+            string coord = TB_coord.Text;
+            string foto = TB_foto.Text;
+            string medico = TB_medico.Text;
 
             SqlCommand command = new SqlCommand();
             command.CommandType = System.Data.CommandType.StoredProcedure;
@@ -103,7 +107,35 @@ namespace WebCientifica
             command2.Parameters.AddWithValue("@PartidoID", 63);
             DataSet ds2 = Conectar(command2);
 
+            SqlCommand command3 = new SqlCommand();
+            command3.CommandType = System.Data.CommandType.StoredProcedure;
+            command3.CommandText = "InsertPeritos";
+            command3.Parameters.AddWithValue("@Acargo", acargo);
+            command3.Parameters.AddWithValue("@Coord", coord);
+            command3.Parameters.AddWithValue("@Fotos", foto);
+            command3.Parameters.AddWithValue("@Rastros", medico);
+            command3.Parameters.AddWithValue("@Plan", acargo);
+            command3.Parameters.AddWithValue("@Medico", acargo);
+            command3.Parameters.AddWithValue("@Balistica", coord);
+            command3.Parameters.AddWithValue("@Quimica", acargo);
+            command3.Parameters.AddWithValue("@Dibujo", acargo);
+            command3.Parameters.AddWithValue("@Acciden", medico);
+            command3.Parameters.AddWithValue("@Morgue", medico);
+            DataSet ds3 = Conectar(command3);
+
             Response.Redirect("Partes.aspx");
+
+            /*VER PARTES
+             select *
+from comunicacion c
+left join hecho h on c.comunicacionID=h.ComunicacionID
+left join perito p on c.comunicacionID=p.ComunicacionID
+-- departamental
+--comisaria
+--caratula
+--usuario
+             
+             */
         }
     }
 }
