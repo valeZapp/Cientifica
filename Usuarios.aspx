@@ -39,8 +39,8 @@
                             <td><%#Eval("UserName") %></td>
                             <td><%#Eval("Doc") %></td>
                             <td><%#Eval("Descripcion") %></td>
-                            <td><asp:ImageButton Id="img_editar" runat="server" ImageUrl="assets/img/editar.jpg" width="20" height="20" title="Editar Perito"/>&nbsp;&nbsp;
-                                <asp:ImageButton Id="img_eliminar" runat="server" ImageUrl="assets/img/eliminar.jpg" width="20" height="20" title="Eliminar Perito"/></td>
+                            <td><asp:ImageButton Id="Img_editar" runat="server" ImageUrl="assets/img/editar.jpg" width="20" height="20" title="Editar Perito"/>&nbsp;&nbsp;
+                                <asp:ImageButton Id="Img_eliminar" runat="server" ImageUrl="assets/img/eliminar.jpg" width="20" height="20" title="Eliminar Perito"/></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>

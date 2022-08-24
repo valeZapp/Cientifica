@@ -32,7 +32,7 @@
                     </HeaderTemplate>
                     <ItemTemplate>
                         <tr>
-                            <td><%#Eval("ComunicacionID") %></td>
+                            <td><%#Eval("DCO") %></td>
                             <td><%#Eval("JefeTurno") %></td>
                             <td><%#Eval("Fecha") %></td>
                             <td><%#Eval("Hora") %></td>

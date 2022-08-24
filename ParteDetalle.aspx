@@ -14,7 +14,7 @@
                     <ItemTemplate>
                         <tr><th scope="col">DELEGACION</th><th>DDPC AZUL</th></tr>
                             <tr><th scope="col">SUBDELEGACION/OFICINA</th><th>SUBDELEGACION POL.CIENT.OLAVARRIA</th></tr>
-                            <tr><th scope="col">N° DCO</th><th><%#Eval("ComunicacionID") %>/<%#Eval("Anio") %></th></tr>
+                            <tr><th scope="col">N° DCO</th><th><%#Eval("DCO") %>/<%#Eval("Anio") %></th></tr>
                             <tr><th scope="col">FECHA</th><th><%#Eval("Fecha") %></th></tr>
                             <tr><th scope="col">HORA</th><th><%#Eval("Hora") %></th></tr>
                             <tr><th scope="col">CARATULA</th><th><%#Eval("Car") %></th></tr>

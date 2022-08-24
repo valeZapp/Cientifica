@@ -9,23 +9,13 @@ using System.Data.SqlClient;
 
 namespace WebCientifica
 {
-    public partial class Caratulas : System.Web.UI.Page
+    public partial class CaratulaNueva : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand comando = new SqlCommand();
-            comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.CommandText = "GetCaratulas";
-            DataSet ds = Conectar(comando);
 
-            DataSet infoUsuario = new DataSet();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = comando;
-            adapter.Fill(infoUsuario);
-
-            rptResult.DataSource = comando.ExecuteReader();
-            rptResult.DataBind();
         }
+
         private DataSet Conectar(SqlCommand comando)
         {
             SqlConnectionStringBuilder cadenaConexion = new SqlConnectionStringBuilder();
@@ -46,9 +36,22 @@ namespace WebCientifica
             cargador.Fill(ds);
             return ds;
         }
-        protected void Button_NewCar_Click(object sender, EventArgs e)
+        protected void Btn_newCar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CaratulaNueva.aspx");
+            string nombre = TB_nombre.Text;
+ 
+            SqlCommand command = new SqlCommand();
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = "InsertCaratula";
+            command.Parameters.AddWithValue("@Nombre", nombre);
+            DataSet ds = Conectar(command);
+
+            DataSet infoUsuario = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+            adapter.Fill(infoUsuario);
+
+            Response.Redirect("Caratulas.aspx");
         }
     }
 }

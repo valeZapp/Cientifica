@@ -11,25 +11,34 @@ namespace WebCientifica
 {
 
 
-    public partial class Caratulas
+    public partial class CaratulaNueva
     {
 
         /// <summary>
-        /// Control Button_NewCar.
+        /// Control TB_nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_NewCar;
+        protected global::System.Web.UI.WebControls.TextBox TB_nombre;
 
         /// <summary>
-        /// Control rptResult.
+        /// Control Btn_newCar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptResult;
+        protected global::System.Web.UI.WebControls.Button Btn_newCar;
+
+        /// <summary>
+        /// Control LBL_Res.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBL_Res;
     }
 }

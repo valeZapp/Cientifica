@@ -1,56 +1,44 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Caratulas.aspx.cs" Inherits="WebCientifica.Caratulas" %>
-
+﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Caratulas.aspx.cs" Inherits="WebCientifica.Caratulas" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div> <!--class="hold-transition login-page"-->
-        <div> <!--class="login-box"-->
-             <div> <!--class="card"-->                
-                  <br/>
-                    <!--center><img src="assets/img/logo_cientifica.jpg" width="80" height="50"/></center-->
-                    
-                        <div> <!--class="login-box"-->
-                            <div> <!--class="login-logo"-->
-                                <center><asp:HyperLink ID="HyperLink1" runat="server"><h2>Car&aacute;tula del hecho</h2></asp:HyperLink></center>
-                            </div>
-
-                            <div> <!--class="card"-->
-                                <div class="card-body login-card-body">
-                                     <p class="login-box-msg">Complete los siguientes datos</p>
-                                     <div class="input-group mb-3">
-                                        <asp:TextBox ID="TB_delito" runat="server" type="text" class="form-control" placeholder="Delito"></asp:TextBox>
-                                        <div class="input-group-append">
-                                            <div class="input-group-text">
-                                                 <span class="fas fa-envelope"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                                                                                        
-                                    <div class="row">
-                                        <div class="col-4">
-                                             <!--<div class="icheck-primary">
-                                                 <input type="checkbox" id="remember" />
-                                                <label for="remember">Remember Me</label>
-                                            </div>-->
-                                        </div>
-                                        
-                                        <div class="col-4">
-                                            <table width="100%" cellpadding="20">
-                                                <tr>
-                                                <td><asp:ImageButton Id="img_agregar" runat="server" ImageUrl="assets/img/agregar.jpg" width="60" height="45" title="Agregar Delito"/></td>
-                                                <td><asp:ImageButton Id="img_buscar" runat="server" ImageUrl="assets/img/buscar.jpg" width="60" height="45" title="Buscar Delito"/></td>
-                                                <td><asp:ImageButton Id="img_editar" runat="server" ImageUrl="assets/img/editar.jpg" width="60" height="45" title="Editar Delito"/></td>
-                                                <td><asp:ImageButton Id="img_eliminar" runat="server" ImageUrl="assets/img/eliminar.jpg" width="60" height="45" title="Eliminar Delito"/><td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                            
-                                    </div><br/>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--<asp:Label ID="LBL_Res" runat="server" Text="Label"></asp:Label>-->
-                   
-             </div>
+    <div class="col-md-12">
+        <div class="col-md-3">
+            <asp:Button ID="Button_NewCar" runat="server" Text="Nueva Car&aacute;tula" onclick="Button_NewCar_Click" class="btn btn-success btn-block"/>
         </div>
+    </div>
+    <br/>
+
+    <div class="col-md-12">
+        <div class="card card-secondary">
+            <div class="card-header">
+                <h3 class="card-title">Caratulas registradas en el sistema</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+                
+            <div class="card-body">
+                <asp:Repeater ID="rptResult" runat="server">
+                    <HeaderTemplate>
+                        <table class="table">
+                            <tr>
+                                <th scope="col">Desripci&oacute;n</th>
+                                <th>Acciones</th>
+                            </tr>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <tr>
+                            <td><%#Eval("Nombre") %></td>
+                            <td><asp:ImageButton Id="Img_editar" runat="server" ImageUrl="assets/img/editar.jpg" width="20" height="20" title="Editar Perito"/>&nbsp;&nbsp;
+                                <asp:ImageButton Id="Img_eliminar" runat="server" ImageUrl="assets/img/eliminar.jpg" width="20" height="20" title="Eliminar Perito"/></td>
+                        </tr>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        </table>
+                    </FooterTemplate>
+                </asp:Repeater>
+            </div>
         </div>
+    </div><br/>
 </asp:Content>

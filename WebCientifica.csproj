@@ -127,6 +127,7 @@
     <Content Include="assets\js\plugins\bootstrap.bundle.min.js" />
     <Content Include="assets\js\plugins\icheck-bootstrap.min.css" />
     <Content Include="assets\js\plugins\jquery.min.js" />
+    <Content Include="CaratulaNueva.aspx" />
     <Content Include="Caratulas.aspx" />
     <Content Include="Dependencias_policiales.aspx" />
     <Content Include="ParteNuevo.aspx" />
@@ -141,6 +142,13 @@
     <Content Include="Index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaratulaNueva.aspx.cs">
+      <DependentUpon>CaratulaNueva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CaratulaNueva.aspx.designer.cs">
+      <DependentUpon>CaratulaNueva.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Caratulas.aspx.cs">
       <DependentUpon>Caratulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
