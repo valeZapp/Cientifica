@@ -15,23 +15,24 @@
             <div class="card-body">
                 <asp:Repeater ID="rptResult" runat="server">
                     <HeaderTemplate>
-                        <table class="table">
+                        <table class="table" style="font-size: 14px;">
                             <tr>
                                 <th scope="col">DCO</th>
-                                <th scope="col">Jefe de Turno</th>
-                                <th scope="col">Fecha</th>
+                                <th scope="col">Jefe_Turno</th>
+                                <th scope="col">Fecha_Hecho</th>
                                 <th scope="col">Hora</th>
-                                <th scope="col">Comunico</th>
+                                <th scope="col">Comunic&oacute;</th>
                                 <th scope="col">Departamental</th>
                                 <th scope="col">Comisar&iacute;a</th>
                                 <th scope="col">Car&aacute;tula</th>
                                 <th scope="col">V&iacute;ctima</th>
                                 <th scope="col">Imputado</th>
+                                <th scope="col">Ver</th>
                             </tr>
                     </HeaderTemplate>
                     <ItemTemplate>
                         <tr>
-                            <td><%#Eval("DCO") %></td>
+                            <td><%#Eval("ComunicacionID") %></td>
                             <td><%#Eval("JefeTurno") %></td>
                             <td><%#Eval("Fecha") %></td>
                             <td><%#Eval("Hora") %></td>
@@ -41,6 +42,7 @@
                             <td><%#Eval("Nombre") %></td>
                             <td><%#Eval("Victima") %></td>
                             <td><%#Eval("Imputado") %></td>
+                            <td><a href="ParteDetalle.aspx?id=<%#Eval("ComunicacionID") %>"><i class="fa fa-search"></i></a></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>

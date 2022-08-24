@@ -9,22 +9,26 @@ using System.Data.SqlClient;
 
 namespace WebCientifica
 {
-    public partial class Partes : System.Web.UI.Page
+    public partial class ParteVer : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand comando = new SqlCommand();
-            comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.CommandText = "GetPartes";
-            DataSet ds = Conectar(comando);
+            var DCO = Request.QueryString["id"];
+
+            SqlCommand command = new SqlCommand();
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = "GetPU";
+            command.Parameters.AddWithValue("@ID", DCO);
+            DataSet ds = Conectar(command);
 
             DataSet infoUsuario = new DataSet();
             SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = comando;
+            adapter.SelectCommand = command;
             adapter.Fill(infoUsuario);
 
-            rptResult.DataSource = comando.ExecuteReader();
+            rptResult.DataSource = command.ExecuteReader();
             rptResult.DataBind();
+
         }
         private DataSet Conectar(SqlCommand comando)
         {
@@ -37,6 +41,7 @@ namespace WebCientifica
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = cadenaConexion.ConnectionString;
             conn.Open();
+
             comando.Connection = conn;
 
             DataSet ds = new DataSet();
@@ -44,10 +49,6 @@ namespace WebCientifica
             cargador.SelectCommand = comando;
             cargador.Fill(ds);
             return ds;
-        }
-        protected void Button_img_verParte_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ParteDetalle.aspx");
         }
     }
 }

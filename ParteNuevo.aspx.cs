@@ -124,18 +124,6 @@ namespace WebCientifica
             DataSet ds3 = Conectar(command3);
 
             Response.Redirect("Partes.aspx");
-
-            /*VER PARTES
-             select *
-from comunicacion c
-left join hecho h on c.comunicacionID=h.ComunicacionID
-left join perito p on c.comunicacionID=p.ComunicacionID
--- departamental
---comisaria
---caratula
---usuario
-             
-             */
         }
     }
 }

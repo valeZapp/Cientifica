@@ -131,6 +131,7 @@
     <Content Include="Dependencias_policiales.aspx" />
     <Content Include="ParteNuevo.aspx" />
     <Content Include="Partes.aspx" />
+    <Content Include="ParteDetalle.aspx" />
     <Content Include="Peritos.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="UsuarioNuevo.aspx" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="Partes.aspx.designer.cs">
       <DependentUpon>Partes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParteDetalle.aspx.cs">
+      <DependentUpon>ParteDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParteDetalle.aspx.designer.cs">
+      <DependentUpon>ParteDetalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Peritos.aspx.cs">
       <DependentUpon>Peritos.aspx</DependentUpon>
