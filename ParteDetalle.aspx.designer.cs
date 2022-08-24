@@ -9,11 +9,8 @@
 
 namespace WebCientifica
 {
-
-
     public partial class ParteVer
     {
-
         /// <summary>
         /// Control rptResult.
         /// </summary>

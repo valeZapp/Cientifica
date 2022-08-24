@@ -11,7 +11,6 @@ namespace WebCientifica
 {
     public partial class Partes
     {
-
         /// <summary>
         /// Control rptResult.
         /// </summary>
