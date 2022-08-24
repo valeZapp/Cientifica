@@ -9,7 +9,6 @@
 
 namespace WebCientifica
 {
-
     public partial class Partes
     {
 
